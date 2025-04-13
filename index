@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>AniMerch | Your One-Stop Shop for Anime merchandise </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="top-bar">
+                <a href="#" class="promo">Sign Up & Save 15%</a>
+            </div>
+            <div class="main-header">
+                <div class="logo">
+                    <a href="index.html"><img src="" alt="AniMerch" width="50px"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-box" placeholder="Find the kit your heart desires">
+                    <button onclick="filterProducts()">Search</button>
+                </div>
+                <div class="header-icons">
+                    <a href="cart.html" class="cart-icon"><img src="images/grocery-store.png" alt="bookmark" width="20px"></a>
+                    <a href="account.html" class="profile-icon"><img src="images/user.png" alt="bookmark" width="20px"></a>
+                    <a href="wishlist.html" class="wishlist-icon"><img src="images/bookmark.png" alt="bookmark" width="20px"></a>
+                    <a href="help" class="help-icon"><img src="images/help-web-button.png" alt="bookmark" width="20px"></a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">New Drops</a></li>
+                    <li><a href="productswomen.html">AniMerch Exclusives</a></li>
+                    <li><a href="productskids.html">Apparel</a></li>
+                    <li><a href="classics.html">Outwear</a><li></li>
+                    <li><a href="Newdrops.html">Accessories</a></li>
+                    <li><a href="cyberdeals.html">Cyber Deals</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="sticky-banner">
+            <img src="images/salebanner.png" alt="Photo Banner">
+        </div>  
+        <section class="league-selection">
+            <h2>Shop Your Favourite Anime</h2>
+            <div class="league-icons">
+                <div class="league">
+                    <img src="images/narutologo.png" alt="Naruto">
+                    <li><a href="products.html">Naruto</a></li>
+                </div>
+                <div class="league">
+                    <img src="images/jjklogo.png" alt="JJK">
+                    <p>Jujutsu Kaisen</p>
+                </div>
+                <div class="league">
+                    <img src="images/demonslayer.png" alt="Bundesliga">
+                    <p>Demon Slayer</p>
+                </div>
+                <div class="league">
+                    <img src="images/one piece logo.png" alt="Serie A">
+                    <p>One Piece</p>
+                </div>
+                <div class="league">
+                    <img src="images/pokemon logo.png" alt="Ligue 1">
+                    <p>Pokemon</p>
+                </div>
+                <div class="league">
+                    <img src="images/bluelock logo.png" alt="International">
+                    <p>Blue Lock</p>
+                </div>
+            </div>
+        </section>
+        <section class="sales-banner">
+            <img src="images/sale.png" alt="sale">
+            <div class="sales-contents">
+            </div>
+        </section> 
+        <section class="banner">
+            <div class="banner-contents">
+                <h1>Official Football Kits</h1>
+                <p>Shop your favorite club kits from leagues like Premier League, LaLiga, Serie A, and Bundesliga!</p>
+                <a href="products.html" class="btn">Shop Now</a>
+            </div>
+        </section>    
+        <!-- Embed a YouTube video -->
+        <section class="video-ad-container">
+             <div class="video-ad-container">
+             <iframe class="banner-video"src="https://www.youtube.com/embed/0akojHS4KYY" frameborder="0" allow="accelerometer; allow="autoplay; encrypted-media; gyroscope; picture-in-picturee" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</div>
+        <!-- Main Content -->
+    <main>
+        <!-- Banner -->
+        <section class="banner-sale">
+            <div class="sale-content">
+                <h2>Cyber Sale</h2>
+                <p>UP TO 30% OFF</p>
+                <a href="cyberdeals.html" class="btn">Shop Now</a>
+            </div>
+            <img src="images/offer.png" alt="sale" class="img-fluid">
+        </section>
+        <!-- Deals Section -->
+        <section class="deals">
+            <h2>Unmissable Deals</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/Liv-Homekit.png" alt="Liverpool Home Kit">
+                    <p>Liverpool Nike Home Kit Mens 2024-25</p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/barcahomekit.png" alt="Barcelona Home Kit">
+                    <p>Barcelona Nike Home Kit Mens 2024-25</p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/Liv-Thirdkit.png" alt="Liverpool Third Kit">
+                    <p>Liverpool Nike Third Kit Mens 2024-25</p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/Arsenal-Home.png" alt="Arsenal Home Kit">
+                    <p>Arsenal Adidas Home Kit Mens 2024-25</p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/rmhomekit.png" alt="Real Madrid Home Kit">
+                    <p>Real Madrid Adidas Home Kit Mens 2025 </p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+                <div class="product">
+                    <div class="discount-badge">30% OFF</div>
+                    <img src="images/barcafourthkit.png" alt="Barcelona Fourth Kit">
+                    <p>Barcelona Nike Fourth Kit Mens 2023-24</p>
+                    <p><strong>₱ 1,750.00</strong></p>
+                    <p><s>₱ 2,500.00</s></p>
+                    <p><i>(Price incl. 12% VAT)</i></p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!------------------------------ featured categories------------------------------>
+    <div class="categories">
+    <div class="small-container">
+        <p>Cyber Sale Offers</p>
+        <div class="row">
+            <div class="col-3">
+                <a href="products.html">
+                <img src="images/mostwantedkit.png" alt="Most Wanted Kit" class="img-fluid">
+            </a>
+            </div>
+            <div class="col-3">
+                <a href="classics.html">
+                <img src="images/timelesclassic.png" alt="Timeless Classic" class="img-fluid">
+            </a>
+            </div>
+            <div class="col-3">
+                <a href="productskids.html">
+                <img src="images/kidsgear.png" alt="Kids Gear" class="img-fluid">
+            </a>
+            </div>
+            <div class="col-3">
+                <img src="images/playerprinting.png" alt="Player Printing" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+        <!------------------------------ featured Products------------------------------>
+        <div class="small-container">
+             <h2 class="title" >Latest Products</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/barcanewdeals.png"></a>
+                        <h4>Barcelona Nike Dri-FIT ADV Elite Training Top - Black</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>₱ 2,000.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/barcanewdealstrack.png"></a>
+                        <h4>Barcelona Nike Strike Tracksuit - Black</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>₱ 3,000.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/mancitynewdeals.png"></a>
+                        <h4>Manchester City PUMA Casuals Polo - Dark Red</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>₱ 2,599.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/lfcnewdeals.png"></a>
+                        <h4>Liverpool Nike Anthem Jacket - Brown</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <p>₱ 3,599.00</p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/villanewdeals.png"></a>
+                        <h4>Aston Villa Adidas Training Top - Grey</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>₱ 3,599.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/spursnewdeals.png"></a>
+                        <h4>Tottenham Hotspur Core Hoodie - Black - Mens</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>₱ 3,599.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/cfcnewdeals.png"></a>
+                        <h4>Chelsea 1/4 Zip Jumper - Fawn - Mens</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>₱ 3,499.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/lfcnewdealsshirt.png"></a>
+                        <h4>Liverpool Nike Strike Training Top - Black</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <p>₱ 2,599.00</p>
+                    </div>  
+                </div>
+            </div>
+        <!------------------------------Testimonial---------------------------------->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>I purchased a women’s football kit from KitsHub, and I’m thrilled with it! The quality is outstanding, the fit is perfect, and the design looks even better in person. The shopping process was smooth, and delivery was fast. I’ll definitely be recommending KitsHub to friends.</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <img src="images/user-1.png">
+                        <h3>Sean Parkar</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>I recently bought a classic football kit from KitsHub, and it was a fantastic experience! The site is easy to navigate, the selection is amazing, and the kit I received was top-notch in quality and detail. Shipping was quick, and the customer service was helpful and responsive. Highly recommend KitsHub for any football fan!</p>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <img src="images/user-2.png">
+                        <h3>Mike Smith</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>I bought kits for my kids and my husband from the kids' and men's sections on KitsHub, and the whole experience was amazing! The site was easy to use, the variety was impressive, and the quality of the kits was excellent. My family loved their new football gear, and I’ll definitely shop here again.</p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="images/user-3.png">
+                        <h3>Mabel Joe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Back to Top Button -->
+<button id="back-to-top-btn" onclick="scrollToTop()">
+    <i class="fa fa-arrow-up"></i>
+</button>
+        <div class="brands">
+            <div class="small-container">
+                <h1>Our Partners</h1>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/pumalogo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/adidaslogo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/Nike-Logo,png.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/castorelogo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank"><img src="images/play-store.png" alt=""></a>
+                    <a href="https://apps.apple.com/us/app/example-app/id123456789" target="_blank"><img src="images/app-store.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>KitsHub</h3>
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="coupons.html">Coupons</a></li>
+                    <li><a href="blog-post.html">Blog Post</a></li>
+                    <li><a href="return-policy.html">Return Policy</a></li>
+                    <li><a href="join-affiliate.html">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/example" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/example" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/example" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2024 - John Kenneth Racho</p>
+    </div>
+</body>
+ <!-- JavaScript -->
+ <script>
+    // Back to top functionality
+    window.onscroll = function() {
+        toggleBackToTopButton();
+    };
+
+    function toggleBackToTopButton() {
+        const button = document.getElementById('back-to-top-btn');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+
+    // Product filtering functionality
+    function filterProducts() {
+        const query = document.getElementById('search-box').value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+        
+        products.forEach(product => {
+            const name = product.querySelector('h4').textContent.toLowerCase();
+            if (name.includes(query)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+</script>
+<!-- JavaScript -->
+<script>
+    // Function to filter products based on search input
+    function filterProducts() {
+        const query = document.getElementById('search-box').value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+
+        products.forEach(product => {
+            const name = product.getAttribute('data-name').toLowerCase();
+            if (name.includes(query)) {
+                product.style.display = 'block';  // Show the product if it matches
+            } else {
+                product.style.display = 'none';  // Hide the product if it doesn't match
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
